@@ -1,0 +1,226 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+.btn:hover{
+	  border:1px solid #2f2f2f; 
+	  color:#2f2f2f;
+	}
+	
+p{
+	 color:#c2c0c3; 
+	 line-height:1.5; 
+	 margin:1% 0;
+	}
+
+/*--------menu---------------->*/
+
+.icon-bar{background:#fff;}
+
+.navbar {
+      margin-bottom: 0;
+      background:#282828;
+      z-index: 9999;
+      border: 0;
+	  border-radius: 0;
+    }
+  
+.navbar li a{
+      color: #fff !important;
+    }
+  
+.navbar-nav li a:hover, .navbar-nav li.active a {
+      font-weight:bold;
+      background-color:#282828 !important;
+    }
+  
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+	  background-color:#282828 !important;
+    }
+
+/*-----------top-------------*/	
+#top{padding:10% 0 5% 0;}
+
+.btn1{
+	  background:#414143;
+	  color:#fff;
+	  border:1px solid #fff;
+	  margin-top:10%;
+	  font-weight:bold;
+	}
+
+.james{
+	  float:left; 
+	  width:25%; 
+	  margin-right:5%; 
+	  margin-left:5%;
+	}
+
+/*-----------work-------------*/
+#work{
+	  text-align:center;
+	  background:#f8f8f8; 
+	  padding:4%;
+	}
+	
+.fa-comments-o,.fa-camera-retro,.fa-thumbs-o-up{ 
+	  color:#eb8996; 
+	  font-size:60px;
+	}
+
+.box{
+	  float:left; 
+	  background:white;  
+	  -moz-box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); 
+	  -webkit-box-shadow:1px 2px 4px rgba(0, 0, 0, .5); 
+	  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); 
+	  padding:2%; 
+	  margin:1%; 
+	  width:31%; 
+	  transform:scale(1); 
+	  transition:all 1s;
+	}
+	
+.box:hover{transform:scale(1.1);}
+
+.btn2{
+	  background:#414143;
+	  color:#fff;
+	  border:1px solid #f8f8f8;
+	  font-weight:bold;
+	}
+
+.min_row{padding:2% 10%;}
+
+/*-----------portfolio-------------*/
+#portfolio{
+	  text-align:center;
+	  background:#f1f1f1; 
+	  padding:4% 0;
+	}
+	
+.image-box{ 
+	  width:32%; 
+	  background:#ffffff; 
+	  float:left; 
+	  box-sizing:border-box; 
+	  margin-left:1%; 
+	  margin-bottom:1%; 
+	  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5); 
+	  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); 
+	  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); 
+	  position:relative; 
+	  overflow:hidden;
+	}
+	
+.image-box img{ 
+	  max-width:100%; 
+	  display:block;
+	}
+
+.image-box:hover .img-desk{opacity:0;}
+
+.img-desk{
+	  position:absolute; 
+	  width:100%; 
+	  height:100%; 
+	  background:#000; 
+	  opacity:0.3; 
+	  top:0; 
+	  right:0; 
+	  transition:1s all;
+	}
+	
+.btn3{
+	  background:#414143;
+	  color:#fff;
+	  border:1px solid #f1f1f1;
+	  font-weight:bold;
+	}
+
+/*-----------contact-------------*/
+#contact{
+	  text-align:center;
+	  background:#2f2f2f; 
+	  color:#fff; 
+	  padding:4% 0;
+	}
+	
+form{
+	  width:50%; 
+	  margin:0 auto;
+	}
+
+.text{
+	  width:47.5%; 
+	  margin-right:5%; 
+	  float:left;
+	}
+
+.text input{
+	  background:#282828; 
+	  border:none; 
+	  padding:3%; 
+	  color:#c2c0c3;
+	}
+	
+.right2{margin-right:0;}
+
+.text2 input{
+	  width:100%; 
+	  background:#282828; 
+	  border:none; 
+	  line-height:1.5; 
+	  padding:3%; 
+	  margin:2% 0; 
+	  color:#c2c0c3;
+	}
+	
+.text3{width:100%;}
+
+.text3 textarea{
+	  width:100%; 
+	  background:#282828; 
+	  border:none; 
+	  line-height:1.5; 
+	  padding:3%; 
+	  margin-bottom:2%; 
+	  resize:none; 
+	  height:150px; 
+	  color:#c2c0c3;
+	}
+	
+.btn4{
+	  background:#414143; 
+	  color:white; 
+	  padding:10px 20px; 
+	  font-weight:bold;
+	}
+
+/*-----------footer-------------*/
+footer{
+	  text-align:center;
+	  padding:1% 0; 
+	  background:#303030;
+	}
+	
+.end{color:#c2c0c3;}
+
+/*---responsive----*/
+/*---for small devices----*/
+@media screen and (max-width:992px){
+	.smallh{font-size:16px;}
+	.smallp{font-size:13px;}
+}
+
+/*---for exxtra small devices----*/
+@media screen and (max-width:768px){
+#top{text-align:center;}
+.james{float:none; margin:0 auto; margin-top:2em;}
+.box:nth-child(2){display:none;}
+.box{width:47%;}
+.image-box:nth-child(2),.image-box:nth-child(5){display:none;}
+.image-box{width:47%;}
+.box{transform:scale(0.9); transition:all 1s;}
+.box:hover{transform:scale(1.1);}
+}
